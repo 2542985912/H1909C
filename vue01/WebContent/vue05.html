@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="./js/vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<form action="">
+			<input v-model="user.name"><br>
+			<input v-model="user.age"><br>
+			<input v-model="user.hobby"><br>
+		<input v-model="ag">
+		<button @click="add">加</button>
+		<button @click="rem">减</button>
+		</form>
+	</div>
+	<script type="text/javascript">
+		var app=new Vue({
+			el:"#app",
+			data:{
+				ag:19,
+				user:{
+					name:"张三",
+					age:18,
+					hobby:"足球,篮球"
+				}
+			},
+			methods:{
+				add(){
+					this.ag++;
+				},
+				rem(){
+					this.ag--;
+				}
+			},
+			created(){
+			}
+		});
+	</script>
+</body>
+</html>
