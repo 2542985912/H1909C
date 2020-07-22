@@ -1,0 +1,36 @@
+package cn.jiyun.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import cn.jiyun.mapper.StuMapper;
+import cn.jiyun.pojo.Clazz;
+import cn.jiyun.pojo.Student;
+
+@Service
+@Transactional
+public class StuServiceimpl implements StuService {
+	@Autowired
+	private StuMapper stuMapper;
+
+	@Override
+	public List<Student> findAll() {
+		// TODO Auto-generated method stub
+		return stuMapper.findAll();
+	}
+
+	@Override
+	public List<Clazz> findClazz() {
+		// TODO Auto-generated method stub
+		return stuMapper.findClazz();
+	}
+
+	@Override
+	public int addstu(Student stu) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

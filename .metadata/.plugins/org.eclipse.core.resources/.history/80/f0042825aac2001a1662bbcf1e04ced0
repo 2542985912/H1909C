@@ -1,0 +1,15 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.jiyun.mapper.StuMapper">
+<select id="findAll" resultType="student">
+	SELECT s.*,c.cname FROM student s,clazz c 
+	WHERE s.cid=c.cid
+</select>
+<select id="findClazz" resultType="clazz">
+	select * from clazz
+</select>
+<insert id="addstu" parameterType="student">
+	insert into student values (null,#{sname},#{sex},null,#{birthday},#{cid})
+</insert>
+<update id="updateStu" parameterType="student" ></update>
+</mapper>

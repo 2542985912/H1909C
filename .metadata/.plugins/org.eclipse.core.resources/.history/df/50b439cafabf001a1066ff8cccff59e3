@@ -1,0 +1,5 @@
+package cn.jinyun.service;
+
+public interface StuService {
+
+}

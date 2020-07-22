@@ -1,0 +1,9 @@
+package poi01;
+
+public class OutTest {
+	//1.实例化工作薄
+	//2.创建sheet页
+	//3.创建行row
+	//4.创建单元格并赋值
+	//5.导出
+}

@@ -1,0 +1,13 @@
+package cn.jinyun.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import cn.jinyun.service.StuService;
+
+@Controller
+public class StuController {
+	@Autowired
+	private StuService stuService;
+	
+}

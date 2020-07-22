@@ -1,0 +1,5 @@
+package cn.jinyun.service;
+
+public class StuServiceimpl implements StuService {
+
+}

@@ -1,0 +1,24 @@
+package cn.jinyun.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import cn.jinyun.pojo.Student;
+import cn.jinyun.service.StuService;
+
+@Controller
+public class StuController {
+	@Autowired
+	private StuService stuService;
+	
+	@RequestMapping("findAll")
+	public String findAll(Model model){
+		List<Student> list=stuService.findAll();
+		model.addAttribute("list", list);
+		return "elist";
+	}
+}

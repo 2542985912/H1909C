@@ -1,0 +1,43 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.jiyun.mapper.EmpMapper">
+
+<update id="update" parameterType="employee">
+	update employee set ename=#{ename},deid=#{deid},
+					birthday=#{birthday},hobby=#{hobby} 
+					where eid=#{eid}
+</update>
+
+<select id="findById" parameterType="employee" resultType="employee">
+	select * from employee where eid=#{eid}
+</select>
+
+<delete id="deleteById" parameterType="employee">
+	delete from employee where eid=#{eid}
+</delete>
+
+<insert id="add" parameterType="employee">
+	insert into employee values(null,#{ename},#{deid},#{birthday},#{hobby})
+</insert>
+
+<select id="findByName" parameterType="string" resultType="employee">
+	select * from employee where ename=#{ename}
+</select>
+
+<select id="findDept" resultType="department">
+	select * from department
+</select>
+	
+<select id="findAll" parameterType="employee" resultType="employee">
+	SELECT e.*,d.dname FROM employee e,department d 
+		<where> 
+			e.deid=d.deid
+			<if test="ename!=null and ename!=''">
+				and ename like '%${ename}%'
+			</if>
+			 order by birthday desc
+		</where> 
+		
+</select>
+  
+</mapper>

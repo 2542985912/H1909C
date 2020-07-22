@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri name="http://www.springframework.org/schema/aop/spring-aop-4.0.xsd" uri="file:///D:/大数据入学教育/DTD约束/resource/aop/spring-aop-4.2.4.RELEASE.jar"/>
+  <uri name="http://mybatis.org/dtd/mybatis-3-mapper.dtd" uri="file:///D:/大数据入学教育/DTD约束/resource/mybatis-3-mapper.dtd"/>
+  <uri name="http://mybatis.org/dtd/mybatis-3-config.dtd" uri="file:///D:/大数据入学教育/DTD约束/resource/mybatis-3-config.dtd"/>
+  <uri name="http://www.springframework.org/schema/beans/spring-beans-4.0.xsd" uri="file:///D:/大数据入学教育/DTD约束/resource/spring/spring-beans-4.2.4.RELEASE.jar"/>
+  <uri name="http://www.springframework.org/schema/context/spring-context-4.0.xsd" uri="file:///D:/大数据入学教育/DTD约束/resource/spring/spring-context-4.2.4.RELEASE.jar"/>
+  <uri name="http://www.springframework.org/schema/tx/spring-tx-4.0.xsd" uri="file:///D:/大数据入学教育/DTD约束/resource/jdbcTemplate/spring-tx-4.2.4.RELEASE.jar"/>
+</catalog>
