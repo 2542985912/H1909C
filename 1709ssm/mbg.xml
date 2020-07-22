@@ -24,7 +24,7 @@
 		<!-- 配置数据库连接 -->
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
 			connectionURL="jdbc:mysql://localhost:3306/ssm" userId="root"
-			password="root">
+			password="xqx1234">
 		</jdbcConnection>
 
 		<javaTypeResolver>
@@ -59,8 +59,7 @@
 		<table tableName="operation" domainObjectName="Operation"></table>
 		<table tableName="role" domainObjectName="Role"></table>
 		<table tableName="token" domainObjectName="Token"></table> -->
-		<table tableName="student" domainObjectName="Student"></table>
-		<table tableName="class" domainObjectName="Clazz"></table>
+		<table tableName="user" domainObjectName="User"></table>
 		
 		<!-- 		<table tableName="log" domainObjectName="Log" enableSelectByExample="false" enableDeleteByExample="false" enableUpdateByExample="false"></table> -->
 <!-- 		<table tableName="attachment" domainObjectName="Attachment" enableSelectByExample="false" enableDeleteByExample="false" enableUpdateByExample="false"></table> -->

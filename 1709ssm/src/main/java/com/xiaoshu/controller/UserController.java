@@ -29,7 +29,7 @@ import com.github.pagehelper.PageInfo;
 @RequestMapping("user")
 public class UserController extends LogController{
 	static Logger logger = Logger.getLogger(UserController.class);
-
+	 
 	@Autowired
 	private UserService userService;
 	
@@ -170,4 +170,5 @@ public class UserController extends LogController{
 		}
 		WriterUtil.write(response, result.toString());
 	}
+	
 }
